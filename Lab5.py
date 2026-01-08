@@ -6,15 +6,16 @@
 # *****
 def hollow_square(n):
     result = ""
-    row = 1
-    column = 1
 
-    while row <= 1 or row <= n:
-        result += ("*" * n)
+    for i in range(n):
+        for j in range(n):
+            if i == 0 or i == n - 1 or j == 0 or j == n - 1:
+                result += "*"
+            else:
+                result += " "
+        result += "\n"
 
-    while 1 < row < n:
-        result += "*   *"
-        
+      
     return result.rstrip()
 print(hollow_square(5))
 
