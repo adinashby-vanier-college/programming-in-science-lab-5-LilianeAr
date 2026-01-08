@@ -9,10 +9,10 @@ def hollow_square(n):
     row = 1
     column = 1
 
-    while row <= 1 or row <= 5:
-        result += ("*" * 5)
+    while row <= 1 or row <= n:
+        result += ("*" * n)
 
-    while 1 < row < 5:
+    while 1 < row < n:
         result += "*   *"
         
     return result.rstrip()
