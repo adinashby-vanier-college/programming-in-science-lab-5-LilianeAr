@@ -45,7 +45,18 @@ print(number_pattern(4))
 
 # Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
 def sum_of_natural_numbers(n):
-    return ""
+    i = 1
+    count = 1
+    total = 0
+
+    while i <= n:
+        total += count
+        i += 1
+        count += 1
+
+    return total
+print(sum_of_natural_numbers(5))
+
 
 # Example for n = 4:
 #    *
